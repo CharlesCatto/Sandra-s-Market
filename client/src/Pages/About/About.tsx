@@ -2,7 +2,8 @@ import sandraImage from "/public/img/sandra.png";
 import edgarImage from "/public/img/edgar.png";
 import cookieImage from "/public/img/cookie.jpg";
 import styles from "./About.module.css";
-import SnowEffect from "./SnowEffect"; // Importez le composant SnowEffect
+import SnowEffect from "./SnowEffect";
+import Dog from "./Dog/Dog";
 
 function About() {
   return (
@@ -93,6 +94,9 @@ function About() {
         <div className={styles.bas}>
           <div className={styles.tronc} />
         </div>
+      </div>
+      <div className={styles.dog}>
+        <Dog />
       </div>
     </div>
   );
