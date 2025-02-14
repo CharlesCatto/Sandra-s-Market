@@ -1,0 +1,512 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap");
+
+.aboutContainer {
+  display: grid;
+  grid-template-areas:
+    "about-sandra sandra-image"
+    "edgar-image meet-edgar"
+    "meet-cookie cookie-image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Georgia", serif;
+  color: var(--light);
+  background-image: url("../assets/aboutBG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 8em;
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+}
+
+.aboutSandra {
+  grid-area: about-sandra;
+  background-color: rgba(0, 0, 0, 0.178);
+  color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.sandraImage {
+  grid-area: sandra-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sandraImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edgarImage {
+  grid-area: edgar-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edgarImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.meetEdgar {
+  grid-area: meet-edgar;
+  background-color: rgba(0, 0, 0, 0.178);
+  color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.meetCookie {
+  grid-area: meet-cookie;
+  background-color: rgba(0, 0, 0, 0.178);
+  color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.cookieImage {
+  grid-area: cookie-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookieImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-container .moon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+  box-shadow: 0 0 20px 10px #fff;
+  z-index: 1;
+}
+
+.about-container .snowflake {
+  position: absolute;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall 5s linear infinite;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.about-container .snow-ground {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.snowflake {
+  position: absolute;
+  top: -10px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall 5s linear infinite;
+}
+
+.snowGround {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #fff;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.aboutContainer .snowGround {
+  z-index: 1;
+  opacity: 1;
+}
+.snowGround {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background: #fff;
+  border-top-left-radius: 50% 25px;
+  border-top-right-radius: 50% 25px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .snow-ground {
+    bottom: -79%;
+  }
+}
+.aboutContainer {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "about-sandra sandra-image"
+    "edgar-image meet-edgar"
+    "meet-cookie cookie-image";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  padding: 20px;
+  font-family: "Georgia", serif;
+  color: var(--light);
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  padding-bottom: 8em;
+  overflow: hidden;
+}
+
+
+.moon {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+  box-shadow: 0 0 20px 10px #fff;
+  z-index: 1; 
+}
+
+
+.snowGround {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background: #fff;
+  border-top-left-radius: 50% 25px;
+  border-top-right-radius: 50% 25px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.aboutSandra,
+.meetEdgar,
+.meetCookie {
+  background-color: rgba(0, 0, 0, 0.178);
+  color: var(--secondary-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.sandraImage img,
+.edgarImage img,
+.cookieImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
+.aboutContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Georgia", serif;
+  color: var(--light);
+  background: linear-gradient(to bottom, #0d1b2a, #1b263b);
+  overflow: hidden;
+}
+
+/* Styles pour la lune */
+.moon {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+  box-shadow: 0 0 20px 10px #fff;
+  z-index: 1;
+}
+
+/* Styles pour le sol de neige */
+.snowGround {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  background: #fff;
+  border-top-left-radius: 50% 25px;
+  border-top-right-radius: 50% 25px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+/* Styles pour les cartes */
+.card {
+  position: absolute;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  z-index: 2;
+}
+
+.imageContainer {
+  margin-bottom: 15px;
+}
+
+.cardImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.textContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.textContainer p {
+  font-size: 1.3rem;
+  color: var(--light);
+}
+
+/* Positionnement et inclinaison des cartes */
+.sandraCard {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.edgarCard {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-5deg);
+}
+
+.cookieCard {
+  top: 20%;
+  right: 10%;
+  transform: rotate(10deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+  }
+
+  .sandraCard,
+  .edgarCard,
+  .cookieCard {
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    z-index: 150000000;
+  }
+}
+
+/* Styles pour le sapin de Noël */
+.christmasTree {
+  position: absolute;
+  bottom: 2%; /* Ajustez cette valeur pour déplacer le sapin plus bas */
+  right: 10%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.etage {
+  height: 100px;
+  width: 200px;
+  background-color: #006400;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour plus de réalisme */
+  background: linear-gradient(to bottom, #006400, #004d00); /* Dégradé pour plus de profondeur */
+}
+
+.etage:nth-of-type(1) {
+  height: 50px;
+  width: 100px;
+  transform: translateY(280%);
+}
+
+.etage:nth-of-type(2) {
+  height: 75px;
+  width: 150px;
+  transform: translateY(120%);
+}
+
+.etage:nth-of-type(3) {
+  height: 100px;
+  width: 200px;
+  transform: translateY(50%);
+}
+
+.bas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tronc {
+  width: 30px;
+  height: 50px;
+  background-color: #642d00;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour plus de réalisme */
+  background: linear-gradient(to bottom, #642d00, #4a2200); /* Dégradé pour plus de profondeur */
+}
+
+.deco {
+  position: absolute;
+  z-index: 10;
+  display: block;
+}
+
+.etoile {
+  background-color: #fffb00;
+  height: 35px;
+  width: 35px;
+  bottom: 61%;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.5); /* Lumière autour de l'étoile */
+}
+
+.boule {
+  background-color: #ec2121;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Ombre pour plus de réalisme */
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #cc0000); /* Dégradé pour plus de profondeur */
+}
+
+#b1 {
+  top: 44%; /* Ajustez cette valeur */
+  left: 30%;
+}
+
+#b2 {
+  top: 46%; /* Ajustez cette valeur */
+  left: 63%;
+  width: 25px;
+  height: 25px;
+}
+
+#b3 {
+  top: 58%; /* Ajustez cette valeur */
+  left: 24%;
+  width: 30px;
+  height: 30px;
+}
+
+#b4 {
+  top: 59%; /* Ajustez cette valeur */
+  left: 73%;
+}
+
+#b5 {
+  top: 76%; /* Ajustez cette valeur */
+  left: 10%;
+  width: 30px;
+  height: 30px;
+}
+
+#b6 {
+  top: 77%; /* Ajustez cette valeur */
+  left: 81%;
+  width: 30px;
+  height: 30px;
+}
+
+#b7 {
+  top: 38%; /* Ajustez cette valeur */
+  left: 47%;
+  width: 22px;
+  height: 22px;
+}
+
+#b8 {
+  top: 52%; /* Ajustez cette valeur */
+  left: 42%;
+  width: 22px;
+  height: 22px;
+}
+
+#b9 {
+  top: 67%; /* Ajustez cette valeur */
+  left: 57%;
+  width: 22px;
+  height: 22px;
+}
+
+#b10 {
+  top: 73%; /* Ajustez cette valeur */
+  left: 36%;
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+}

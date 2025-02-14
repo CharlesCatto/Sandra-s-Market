@@ -1,0 +1,110 @@
+{
+  "climate": [
+    {
+      "img": "climate-warm.png",
+      "checked": false
+    },
+    {
+      "img": "climate-cold.png",
+      "checked": false
+    },
+    {
+      "img": "climate-temperate.png",
+      "checked": false
+    }
+  ],
+  "budget": [
+    {
+      "img": "budget-high.png",
+      "checked": false
+    },
+    {
+      "img": "budget-medium.png",
+      "checked": false
+    },
+    {
+      "img": "budget-low.png",
+      "checked": false
+    }
+  ],
+  "activity": [
+    {
+      "img": "beach.png",
+      "checked": false
+    },
+    {
+      "img": "fête.png",
+      "checked": false
+    },
+    {
+      "img": "shopping.png",
+      "checked": false
+    },
+    {
+      "img": "randonnées.png",
+      "checked": false
+    },
+    {
+      "img": "visite.png",
+      "checked": false
+    },
+    {
+      "img": "culinaire.png",
+      "checked": false
+    },
+    {
+      "img": "détente.png",
+      "checked": false
+    }
+  ],
+  "environnement": [
+    {
+      "img": "plage.png",
+      "checked": false
+    },
+    {
+      "img": "montagne.png",
+      "checked": false
+    },
+    {
+      "img": "campagne.png",
+      "checked": false
+    },
+    {
+      "img": "ville.png",
+      "checked": false
+    }
+  ],
+  "people": [
+    {
+      "img": "seul.png",
+      "checked": false
+    },
+    {
+      "img": "famille.png",
+      "checked": false
+    },
+    {
+      "img": "couple.png",
+      "checked": false
+    },
+    {
+      "img": "amis.png",
+      "checked": false
+    }
+  ],
+  "duration": [
+    {
+      "img": "week.png",
+      "checked": false
+    },
+    {
+      "img": "weekend.png",
+      "checked": false
+    },
+    {
+      "img": "weeks.png",
+      "checked": false
+    }
+  ]
+}

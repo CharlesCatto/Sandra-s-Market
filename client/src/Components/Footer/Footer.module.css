@@ -1,0 +1,66 @@
+/* footer {
+  bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-color); 
+  color: var(--light);
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.container_icon {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1em;
+}
+
+
+.social_icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.social_icon {
+  filter: grayscale(100%); 
+}
+
+
+.social_icon:hover {
+  transform: scale(1.2); 
+  filter: grayscale(0%); 
+} */
+.footer {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--light);
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Georgia", serif;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+.container_icon {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1em;
+}
+
+.social_icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%); /* Make icons grayscale by default */
+}
+
+.social_icon:hover {
+  transform: scale(1.2); /* Scale up on hover */
+  filter: grayscale(0%); /* Remove grayscale on hover */
+}

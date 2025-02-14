@@ -1,0 +1,395 @@
+/* Outer Container */
+.outerContainer {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+/* Inner Container */
+.innerContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  box-shadow: 17px 17px 34px #566762, -17px -17px 34px #d0d7d4;
+  overflow: hidden;
+}
+
+/* Map Container */
+.maps {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+/* Add Market Button */
+.customButton {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+
+.customButton:hover {
+  transform: scale(1.1);
+}
+
+/* Search Mode Button */
+.searchButton {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 1000;
+}
+
+.searchButton:hover {
+  transform: scale(1.1);
+}
+
+/* Search Mode Container */
+.searchModeContainer {
+  position: absolute;
+  top: 25%;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px;
+}
+
+/* Checkboxes */
+.dayCheckboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dayCheckboxes label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Arial", sans-serif;
+  font-size: 0.5em;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.dayCheckboxes input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background-color: var(--light);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dayCheckboxes input[type="checkbox"]:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+.dayCheckboxes input[type="checkbox"]:checked::before {
+  content: "✔";
+  display: block;
+  color: var(--light);
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.dayCheckboxes input[type="checkbox"]:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.dayCheckboxes label:hover {
+  color: var(--secondary-color);
+}
+
+/* Additional Filters */
+.additionalFilters {
+  margin-top: 16px;
+}
+
+.additionalFilters label {
+  display: block;
+  margin: 8px 0;
+}
+
+/* Modal Overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* Modal Title */
+.modalTitle {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Modal Labels */
+.modalLabel {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modalLabelMarket {
+  margin-top: 2rem;
+}
+
+/* Modal Inputs and Selects */
+.modalInput {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modalInput:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Checkbox Container */
+.dayCheckboxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Individual Checkbox */
+.dayCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dayCheckbox input {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dayCheckbox input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Modal Buttons */
+.modalButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.deleteButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff4d4d;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #ff1a1a;
+}
+
+.saveButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: var(--primary-color);
+}
+
+/* Custom Popup Styling */
+.customPopup {
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.customPopup h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.customPopup p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.customPopup strong {
+  color: var(--secondary-color);
+}
+
+.customPopup p strong {
+  color: var(--secondary-color);
+}
+
+.customPopup p .pawIcon {
+  font-size: 1.2rem;
+  margin-right: 4px;
+}
+
+.customPopup p .forbiddenIcon {
+  color: #ff4d4d;
+}
+
+/* Search Bar */
+.searchBar {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.5em;
+}
+
+.search {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.5em;
+}
+
+.searchButton {
+  padding: 8px 16px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.5em;
+}
+
+.searchButton:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.icon:hover {
+  background-color: var(--primary-color);
+}
+
+.navLogo {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center; /* Centre verticalement */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center; /* Centre verticalement */
+  gap: 10px; /* Espace entre le texte et le logo */
+}
+
+.logo {
+  width: 2em;
+  height: 2em;
+}
+
+.h3 {
+  font-size: 0.875em;
+}
+
+.searchIcon:hover {
+  background-color: var(--primary-color);
+}
